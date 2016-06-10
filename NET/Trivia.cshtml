@@ -1,0 +1,31 @@
+﻿@{
+    Layout = "~/_SiteLayout.cshtml";
+    Page.Title = "Trivia";
+}
+<div class="col-sm-12">
+    @if (WebSecurity.IsAuthenticated)
+    {
+    <h1>Urban Trivia</h1>
+        <h2>
+            this is where I would put the definition for the word
+        </h2>
+        <div class="col-sm-3">
+            <h3>Word #1</h3>
+        </div>
+        <div class="col-sm-3">
+            <h3>Word #2</h3>
+        </div>
+        <div class="col-sm-3">
+            <h3>Word #3</h3>
+        </div>
+        <div class="col-sm-3">
+            <h3>Word #4</h3>
+        </div>
+    }
+    else
+    {
+        <h1>SIGN IN YOU FUCK</h1>
+    }
+ </div>
+
+    
