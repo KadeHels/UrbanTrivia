@@ -13,12 +13,32 @@
         <p>
             Have you ever thought trivia games were just too <strong>boring</strong>?
             <a href="http://www.urbandictionary.com/" title="Urban Dictionary">Urban Dictionary</a>
-            is the dictionary of the 21st century! These words are volgur and offensive.. Don't view them at any cost.
+            is the dictionary of the 21st century! These words are vulgar and offensive.. Don't view them at any cost.
             </p>
     </div>
 </section>
 }
-
+@if (WebSecurity.IsAuthenticated)
+{
+    <h1>Urban Trivia</h1>
+    <h2>
+        this is where I would put the definition for the word
+    </h2>
+        <div class="col-sm-3">
+            <h3>Word #1</h3>
+        </div>
+        <div class="col-sm-3">
+            <h3>Word #2</h3>
+        </div>
+        <div class="col-sm-3">
+            <h3>Word #3</h3>
+        </div>
+        <div class="col-sm-3">
+            <h3>Word #4</h3>
+        </div>
+}
+else
+{
 <h3>Get started with the following:</h3>
 
 <ol class="round">
@@ -40,4 +60,4 @@
         <a href="http://go.microsoft.com/fwlink/?LinkId=245143">Learn more…</a>
     </li>
 </ol>
-    
+}
